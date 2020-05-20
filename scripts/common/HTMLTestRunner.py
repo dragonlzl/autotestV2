@@ -784,7 +784,7 @@ class HTMLTestRunner(Template_mixin):
 
         report = self.REPORT_TMPL % dict(
             test_list = ''.join(rows),
-            count = str(result.success_count+result.failure_count+result.error_count),
+            count = str(result.success_count+result.failure_count+result.error_count+result.skipped_count),
             Pass = str(result.success_count),
             fail = str(result.failure_count),
             error = str(result.error_count),
