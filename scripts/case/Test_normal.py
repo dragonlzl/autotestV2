@@ -46,7 +46,7 @@ class normalTest(unittest.TestCase):
     def test_01_normal(self, device, apk_path, apk_name):
         # if_skip_case(self)
         case.apk_install(device=device, apk_path=apk_path, apk_name=apk_name)
-        if apk_name == 'com.ChillyRoom.DungeonShooter':
+        if apk_name == 'com.xxxxxx':
             case.tap_login()
             case.tap_infocheck()
         case.apk_uninstall(apk_name=apk_name)
